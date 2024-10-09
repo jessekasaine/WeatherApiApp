@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="font-sans bg-gray-900 flex items-center justify-center" >
+    <div class="w-11/12 max-w-3xl bg-gradient-to-r from-indigo-500 to-sky-500
+    rounded-lg m-28 px-10 py-9 text-white text-center">
+        <div id="" class="flex w-full justify-between items-center search">
+            <input type="text" placeholder="enter city name" spellcheck="false"
+            class="outline-none px-3 py-6 w-16 h-16 bg-emerald-100 text-gray-500
+            rounded-full me-4 text-2xl flex-1">
+            <button><img src="/Assets/images/search.png"
+                class="h-16"></button>
+        </div>
+        <div id="error" class="text-left me-3 size-4 mt-3 hidden flex-1">
+            <p>Invalid City name</p>
+        </div>
+        <div id="weather" class="hidden">
+            <img id="weather-icon" src="/Assets/images/rain.png" class="w-44 mt-8 mx-auto flex justify-between items-center">
+            <h1 id="temp" class="text-7xl font-medium">22°C</h1>
+            <h2 id="city" class="text-5xl font-normal mt-3">New York</h2>
+            <div class="flex items-center justify-between px-5 mt-12">
+                <div class="flex items-center text-left">
+                    <img src="/Assets/images/humidity.png"
+                    class="w-10 m-3">
+                    <div>
+                        <p id="humidity" class="size-7 -mt-2">
+                            50%
+                        </p>
+                        <p class="-mt-2">humidity</p>
+                    </div>
+                </div>
+                <div class="flex items-center text-left mt-4">
+                    <img src="/Assets/images/wind.png"
+                    class="w-10 m-3">
+                    <div>
+                        <p id="wind" class="size-7 -mt-2 ">
+                            15km/h
+                        </p>
+                        <p class="-mt-2">WindSpeed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/build/main.js"></script>
+</body>
+</html>
